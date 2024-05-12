@@ -14,8 +14,8 @@ export default function MyApp({ handleToggle }) {
     <>
       <Stack
         position={"sticky"}
-        top='5px'
-        zIndex={'999999999999'}
+        top="5px"
+        zIndex={"999999999999"}
         width={"full-width"}
         sx={{
           display: "flex",
@@ -32,7 +32,6 @@ export default function MyApp({ handleToggle }) {
           direction={"row"}
           justifyContent={"space-between"}
           alignItems={"center"}
-    
           width={"100%"}
         >
           <Stack direction={"row"} spacing={2}>

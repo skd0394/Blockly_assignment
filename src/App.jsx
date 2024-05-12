@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import MyApp from "./myapp";
-import { Box, Button, Divider, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import Hand from "./assets/Vector.png";
 import back from "./assets/Group.png";
 import profile from "./assets/profile.png";
@@ -43,26 +43,33 @@ export default function App() {
       <CssBaseline />
       <Stack position={"relative"}>
         <MyApp handleToggle={handleToggle} />
-        <Stack position={'fixed'} top={'300px'} left={"150px"} zIndex={'9999999'} marginBottom={"80px"} spacing={"8px"}>
-          <Box borderRadius={"50px"} sx={{cursor:"pointer"}} >
+        <Stack
+          position={"fixed"}
+          top={"300px"}
+          left={"150px"}
+          zIndex={"9999999"}
+          marginBottom={"80px"}
+          spacing={"8px"}
+        >
+          <Box borderRadius={"50px"} sx={{ cursor: "pointer" }}>
             <FacebookRounded />
           </Box>
-          <Box borderRadius={"50px"} sx={{cursor:"pointer"}} >
+          <Box borderRadius={"50px"} sx={{ cursor: "pointer" }}>
             <Twitter />
           </Box>{" "}
-          <Box borderRadius={"50px"} sx={{cursor:"pointer"}} >
+          <Box borderRadius={"50px"} sx={{ cursor: "pointer" }}>
             <Instagram />
           </Box>{" "}
-          <Box borderRadius={"50px"} sx={{cursor:"pointer"}} >
+          <Box borderRadius={"50px"} sx={{ cursor: "pointer" }}>
             <Reddit />
           </Box>{" "}
-          <Box borderRadius={"50px"} sx={{cursor:"pointer"}} >
+          <Box borderRadius={"50px"} sx={{ cursor: "pointer" }}>
             <Telegram />
           </Box>{" "}
-          <Box borderRadius={"50px"} sx={{cursor:"pointer"}} >
+          <Box borderRadius={"50px"} sx={{ cursor: "pointer" }}>
             <GitHub />
           </Box>{" "}
-          <Box borderRadius={"50px"} sx={{cursor:"pointer"}} >
+          <Box borderRadius={"50px"} sx={{ cursor: "pointer" }}>
             <LinkedIn />
           </Box>{" "}
         </Stack>
